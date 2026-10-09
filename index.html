@@ -5,10 +5,10 @@
 <script>document.documentElement.className+=" js"</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>StarHunter — Telescopes built for the long dark</title>
-<meta name="description" content="StarHunter designs and hand-tests apochromatic refractors, smart Newtonians and collapsible Dobsonians in Flagstaff, Arizona.">
+<meta name="description" content="StarHunter is an independent, two-person telescope design project with no outside funding. Explore our concepts and aperture lab.">
 <meta name="theme-color" content="#08090d">
 <meta property="og:title" content="StarHunter — Telescopes built for the long dark">
-<meta property="og:description" content="Hand-tested optics for people who would rather be outside. Designed and assembled in Flagstaff, Arizona.">
+<meta property="og:description" content="Two people. No outside funding. Exploring telescope designs for nights under the stars.">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -261,7 +261,7 @@ input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;bac
 .timeline .mono{color:var(--gold)}
 .timeline h4{margin:6px 0 4px;font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.15}
 .timeline p{color:var(--ink-3);font-size:14px}
-.team{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:clamp(64px,8vw,112px)}
+.team{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:660px;gap:16px;margin-top:clamp(64px,8vw,112px)}
 .person{border-top:1px solid var(--line-2);padding-top:18px}
 .avatar{width:100%;aspect-ratio:4/5;border-radius:14px;background:var(--bg-2);border:1px solid var(--line);margin-bottom:18px;overflow:hidden;position:relative}
 .avatar svg{width:100%;height:100%}
@@ -390,7 +390,7 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
     </nav>
     <div class="nav__right">
       <button class="redtoggle" id="redToggle" aria-pressed="false" title="Night vision mode — turns the page red to protect your dark adaptation"><i></i><span class="lbl">Night vision</span></button>
-      <a href="#reserve" class="btn btn--solid">Reserve Batch 08</a>
+      <a href="#reserve" class="btn btn--solid">Project updates</a>
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span></button>
     </div>
   </div>
@@ -402,7 +402,7 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
   <a href="#tonight">Tonight</a>
   <a href="#story">Story</a>
   <a href="#journal">Journal</a>
-  <a href="#reserve">Reserve</a>
+  <a href="#reserve">Updates</a>
 </div>
 
 <main id="top">
@@ -416,23 +416,23 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
     </svg>
   </div>
   <div class="wrap hero__in">
-    <p class="mono eyebrow fade-in" style="animation-delay:.2s"><b>Flagstaff, Arizona</b> Est. 2023 · Hand-tested optics</p>
+    <p class="mono eyebrow fade-in" style="animation-delay:.2s"><b>Independent team</b> Two people · No outside funding</p>
     <h1 style="margin-top:28px">
       <span class="line"><span>Built for the</span></span>
       <span class="line"><span><em>long dark.</em></span></span>
     </h1>
     <div class="hero__row">
       <div class="fade-in">
-        <p class="lede">StarHunter makes telescopes for people who would rather be outside. Every mirror and lens is interferometer-tested in our workshop in the world's first International Dark Sky City — then signed by the person who tested it.</p>
+        <p class="lede">StarHunter is a two-person team exploring telescope designs for people who would rather be outside. We're early-stage, independently run and have not raised investment.</p>
         <div class="hero__cta">
           <a href="#telescopes" class="btn btn--solid">Explore the telescopes <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M8 2l5 5-5 5"/></svg></a>
           <a href="#lab" class="btn">Try the Aperture Lab</a>
         </div>
       </div>
       <div class="hero__meta fade-in" style="animation-delay:.75s">
-        <div><strong>λ/10</strong><span class="mono">Wavefront, P–V</span></div>
-        <div><strong>4,200+</strong><span class="mono">Scopes shipped</span></div>
-        <div><strong>4.9</strong><span class="mono">Owner rating</span></div>
+        <div><strong>2</strong><span class="mono">People on the team</span></div>
+        <div><strong>$0</strong><span class="mono">Outside funding</span></div>
+        <div><strong>3</strong><span class="mono">Telescope concepts</span></div>
       </div>
     </div>
   </div>
@@ -440,8 +440,8 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
 
 <div class="ticker" aria-hidden="true">
   <div class="ticker__track mono">
-    <span>Batch 07 now shipping</span><span>Free dark-sky delivery across the U.S. &amp; EU</span><span>5-year optics warranty</span><span>Interferogram included with every scope</span><span>Batch 08 reservations close Nov 14</span><span>Orionid meteor shower peaks Oct 21</span>
-    <span>Batch 07 now shipping</span><span>Free dark-sky delivery across the U.S. &amp; EU</span><span>5-year optics warranty</span><span>Interferogram included with every scope</span><span>Batch 08 reservations close Nov 14</span><span>Orionid meteor shower peaks Oct 21</span>
+    <span>Two-person team</span><span>No outside funding</span><span>Independent telescope design</span><span>Three early-stage concepts</span><span>Explore the Aperture Lab</span><span>Built for nights under the stars</span>
+    <span>Two-person team</span><span>No outside funding</span><span>Independent telescope design</span><span>Three early-stage concepts</span><span>Explore the Aperture Lab</span><span>Built for nights under the stars</span>
   </div>
 </div>
 
@@ -449,12 +449,12 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
 <section class="manifesto">
   <div class="wrap">
     <p class="mono eyebrow rv"><b>00</b> Why we exist</p>
-    <p class="big rv d1" style="margin-top:32px">Most people buy a telescope once, <span class="dim">look at the Moon twice, and put it in a closet.</span> We think that's a design problem — so we build instruments that are <em>quick to set up, honest about what they show,</em> and good enough to keep for thirty years.</p>
+    <p class="big rv d1" style="margin-top:32px">Most people buy a telescope once, <span class="dim">look at the Moon twice, and put it in a closet.</span> We think that's a design problem — so we are exploring instruments that are <em>quick to set up, honest about what they show,</em> and designed to last.</p>
     <div class="stats">
-      <div class="stat rv"><strong data-count="4200">0</strong><p>telescopes shipped to observers in 31 countries since our first batch in 2024.</p></div>
-      <div class="stat rv d1"><strong>λ/10<sup>P–V</sup></strong><p>minimum wavefront accuracy. Every optic is tested; nothing is sampled.</p></div>
-      <div class="stat rv d2"><strong data-count="6">0</strong><p>minutes from car trunk to first light, on average, with Meridian 130.</p></div>
-      <div class="stat rv d3"><strong>5<sup>yrs</sup></strong><p>optics warranty, transferable. Recollimation and recoating are free for life.</p></div>
+      <div class="stat rv"><strong data-count="2">0</strong><p>people currently working on StarHunter.</p></div>
+      <div class="stat rv d1"><strong>$0</strong><p>raised from outside investors to date.</p></div>
+      <div class="stat rv d2"><strong data-count="3">0</strong><p>telescope concepts on the drawing board.</p></div>
+      <div class="stat rv d3"><strong>1</strong><p>shared aim: make the night sky easier to explore.</p></div>
     </div>
   </div>
 </section>
@@ -464,8 +464,8 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
   <div class="wrap">
     <div class="sec__head">
       <p class="mono eyebrow rv"><b>01</b> The telescopes</p>
-      <h2 class="rv">Three instruments. <em>No compromises</em> we'd be embarrassed by.</h2>
-      <p class="lede rv d1">We make a short line on purpose. Each design took eighteen months and roughly forty prototypes. Pick by how you observe, not by how much you spend.</p>
+      <h2 class="rv">Three concepts. <em>One direction:</em> better nights outside.</h2>
+      <p class="lede rv d1">We are exploring three possible telescope designs. Configurations and specifications below are illustrative, not finalized products or offers for sale.</p>
     </div>
 
     <div class="products">
@@ -498,7 +498,7 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
           </svg>
         </div>
         <h3>Lumen 72 <small>Refractor</small></h3>
-        <p class="desc">A 72mm apochromat that fits in a backpack and is ready before your eyes adapt. Pin-sharp stars to the edge, zero color fringing on Jupiter.</p>
+        <p class="desc">A compact 72 mm refractor idea for travel and quick setup. The optical configuration is a design target, not a tested product.</p>
         <ul class="spec">
           <li><span>Aperture</span><span>72 mm · f/6</span></li>
           <li><span>Optics</span><span>FPL-53 air-spaced doublet</span></li>
@@ -506,14 +506,14 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
           <li><span>Best for</span><span>Travel, Moon, wide fields</span></li>
         </ul>
         <div class="product__foot">
-          <p class="price">$1,290<small>OTA + carbon tripod</small></p>
-          <a href="#reserve" class="btn btn--solid" data-model="Lumen 72">Reserve</a>
+          <p class="price">Concept<small>Proposed configuration</small></p>
+          <a href="#reserve" class="btn btn--solid" data-model="Lumen 72">Learn more</a>
         </div>
       </article>
 
       <!-- Meridian 130 -->
       <article class="product rv d1">
-        <div class="product__top mono"><span>SH-M130</span><span class="tag tag--gold">Most chosen</span></div>
+        <div class="product__top mono"><span>SH-M130</span><span class="tag tag--gold">Design concept</span></div>
         <div class="product__art" aria-hidden="true">
           <svg viewBox="0 0 400 280" fill="none" stroke="currentColor" stroke-width="1.1">
             <line class="dim" x1="40" y1="262" x2="360" y2="262" stroke-dasharray="2 4"/>
@@ -540,7 +540,7 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
           </svg>
         </div>
         <h3>Meridian 130 <small>Smart Newtonian</small></h3>
-        <p class="desc">Point it at the sky and it figures out where it is in about eight seconds. Then it finds and tracks anything you tap — while you still look through a real eyepiece.</p>
+        <p class="desc">A 130 mm smart Newtonian concept with proposed plate-solving, object tracking and a traditional eyepiece.</p>
         <ul class="spec">
           <li><span>Aperture</span><span>130 mm · f/5</span></li>
           <li><span>Mirror</span><span>Pyrex parabolic, λ/10</span></li>
@@ -548,8 +548,8 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
           <li><span>Battery</span><span>11 hrs · USB-C</span></li>
         </ul>
         <div class="product__foot">
-          <p class="price">$2,480<small>Complete kit + app</small></p>
-          <a href="#reserve" class="btn btn--solid" data-model="Meridian 130">Reserve</a>
+          <p class="price">Concept<small>Proposed configuration</small></p>
+          <a href="#reserve" class="btn btn--solid" data-model="Meridian 130">Learn more</a>
         </div>
       </article>
 
@@ -576,7 +576,7 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
           </svg>
         </div>
         <h3>Vela 200 <small>Truss Dobsonian</small></h3>
-        <p class="desc">Eight inches of hand-figured mirror that collapses into a box the size of a carry-on. Built for galaxies, globular clusters, and staying up too late.</p>
+        <p class="desc">A portable 200 mm truss Dobsonian concept for deep-sky observing. Materials and dimensions are preliminary.</p>
         <ul class="spec">
           <li><span>Aperture</span><span>200 mm · f/6</span></li>
           <li><span>Mirror</span><span>Hand-figured, Strehl ≥ 0.95</span></li>
@@ -584,8 +584,8 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
           <li><span>Best for</span><span>Galaxies, nebulae, clusters</span></li>
         </ul>
         <div class="product__foot">
-          <p class="price">$3,950<small>Ships in 6–8 weeks</small></p>
-          <a href="#reserve" class="btn btn--solid" data-model="Vela 200">Reserve</a>
+          <p class="price">Concept<small>Proposed configuration</small></p>
+          <a href="#reserve" class="btn btn--solid" data-model="Vela 200">Learn more</a>
         </div>
       </article>
     </div>
@@ -598,7 +598,7 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
     <div>
       <p class="mono eyebrow rv"><b>02</b> Aperture Lab</p>
       <h2 class="rv" style="margin-top:20px">See what a few <em>millimetres</em> buy you.</h2>
-      <p class="lede rv d1" style="margin-top:24px">Aperture is the one number that matters most. Drag the slider to compare your dark-adapted eye with each StarHunter scope — the star field on the right is an illustrative simulation of what each aperture reveals.</p>
+      <p class="lede rv d1" style="margin-top:24px">Aperture is the one number that matters most. Drag the slider to compare your dark-adapted eye with three proposed aperture sizes — the star field is an illustrative simulation, not a through-eyepiece view.</p>
       <div class="readout rv d2">
         <div><strong id="rGrasp">106×</strong><span class="mono">Light vs. the eye</span></div>
         <div><strong id="rLim">12.0</strong><span class="mono">Faintest magnitude</span></div>
@@ -632,14 +632,14 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
   <div class="wrap">
     <div class="sec__head">
       <p class="mono eyebrow rv"><b>03</b> Craft</p>
-      <h2 class="rv">Tested by a person. <em>Signed</em> by the same person.</h2>
-      <p class="lede rv d1">We don't outsource the part that matters. Mirrors are figured and tested in Flagstaff; you get the actual interferogram of your optic, not a brochure.</p>
+      <h2 class="rv">Design for clarity. <em>Test with care.</em></h2>
+      <p class="lede rv d1">Our design direction prioritizes transparent optical measurements, repairability and accessible observing. Examples below describe goals, not verified production capabilities.</p>
     </div>
     <div class="craft">
       <article class="card card--a rv">
         <p class="mono" style="color:var(--gold)">Optics</p>
-        <h3>Every optic, measured. Nothing sampled.</h3>
-        <p>Our Zygo-class Fizeau interferometer maps each surface to a few nanometres. If a mirror misses λ/10 peak-to-valley, it goes back on the polishing machine — not into a box.</p>
+        <h3>Aiming for measurable optics.</h3>
+        <p>A possible quality-control workflow would document each optic with an interferogram and clear acceptance criteria. The sample figures are illustrative only.</p>
         <div class="fringes">
           <svg viewBox="0 0 180 180" role="img" aria-label="Interferogram of a test mirror">
             <defs><clipPath id="cp"><circle cx="90" cy="90" r="84"/></clipPath></defs>
@@ -652,19 +652,19 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
             </g>
           </svg>
           <div class="report">
-            <div><span>Serial</span><b>V200-0418</b></div>
-            <div><span>P–V wavefront</span><b>0.071 λ</b></div>
-            <div><span>RMS</span><b>0.014 λ</b></div>
-            <div><span>Strehl ratio</span><b>0.992</b></div>
-            <div><span>Tested by</span><span>R. Alcántara · 09 / 2026</span></div>
+            <div><span>Sample</span><b>Illustrative only</b></div>
+            <div><span>P–V wavefront</span><b>Target: λ/10</b></div>
+            <div><span>RMS</span><b>Not yet measured</b></div>
+            <div><span>Strehl ratio</span><b>Not yet measured</b></div>
+            <div><span>Status</span><span>Design study · not a test report</span></div>
           </div>
         </div>
       </article>
 
       <article class="card card--b rv d1">
         <p class="mono" style="color:var(--gold)">Mechanics</p>
-        <h3>Zero-backlash drives you'll never hear.</h3>
-        <p>Harmonic gearboxes on both axes. Meridian tracks within 2 arcseconds over an hour — silently, at 4 W.</p>
+        <h3>Exploring quiet, precise tracking.</h3>
+        <p>We are considering compact drive mechanisms and alignment methods. The graph is a schematic comparison, not measured tracking performance.</p>
         <div class="track" aria-hidden="true">
           <svg viewBox="0 0 400 120" preserveAspectRatio="none">
             <line x1="0" y1="60" x2="400" y2="60" stroke="var(--line-2)" stroke-dasharray="2 4"/>
@@ -672,14 +672,14 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
             <path d="M0 60 C20 30 40 92 60 44 S100 86 120 38 S160 90 180 50 S220 80 240 36 S280 94 300 46 S340 82 360 40 S390 70 400 60" fill="none" stroke="var(--ink-3)" stroke-width="1" opacity=".5"/>
           </svg>
           <span class="mono" style="position:absolute;left:12px;top:8px;font-size:10px;color:var(--ink-3)">Tracking error · 60 min</span>
-          <span class="mono" style="position:absolute;right:12px;bottom:8px;font-size:10px"><span style="color:var(--gold)">— StarHunter</span> <span style="color:var(--ink-3)">— typical worm gear</span></span>
+          <span class="mono" style="position:absolute;right:12px;bottom:8px;font-size:10px"><span style="color:var(--gold)">— target concept</span> <span style="color:var(--ink-3)">— typical worm gear</span></span>
         </div>
       </article>
 
       <article class="card card--c rv">
         <p class="mono" style="color:var(--gold)">Materials</p>
-        <h3>Made to outlive its owner's first car.</h3>
-        <p>Machined 6061 aluminium, carbon-fibre truss poles, Baltic birch rocker boxes from a family mill in Oregon. No plastic where load goes through.</p>
+        <h3>Designing for durability and repair.</h3>
+        <p>Potential materials include aluminium, carbon fibre and plywood. Final construction choices will depend on prototype testing.</p>
         <div class="chips">
           <span class="tag mono">6061-T6 aluminium</span><span class="tag mono">Carbon truss</span><span class="tag mono">Baltic birch</span><span class="tag mono">Enhanced Al 96%</span>
         </div>
@@ -689,8 +689,8 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
         <div class="app">
           <div>
             <p class="mono" style="color:var(--gold)">StarHunter Field app</p>
-            <h3>The sky, explained while you're looking at it.</h3>
-            <p>Tonight's best targets ranked by your aperture, your horizon and the Moon. Plate-solve alignment, observing logs, and a red-light interface that never blinds you. Free, forever, no account required.</p>
+            <h3>An observing companion, on the drawing board.</h3>
+            <p>A possible companion app could highlight targets, support alignment and keep observing notes. This screen is a design mockup; no app release is announced.</p>
             <div class="chips"><span class="tag mono">iOS</span><span class="tag mono">Android</span><span class="tag mono">Works offline</span></div>
           </div>
           <div class="phone" aria-hidden="true">
@@ -719,7 +719,7 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
     <div class="sec__head">
       <p class="mono eyebrow rv"><b>04</b> Tonight</p>
       <h2 class="rv">What's up <em>tonight.</em></h2>
-      <p class="lede rv d1">Calculated live from your device's clock. Targets are for the evening sky at mid-northern latitudes — the same list our team will be looking at.</p>
+      <p class="lede rv d1">Moon phases are approximated from your device clock; seasonal targets are examples for mid-northern latitudes, not a location-specific observing forecast.</p>
     </div>
     <div class="tonight">
       <div class="moon rv">
@@ -745,64 +745,59 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
 <section class="sec" id="story" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
     <div class="sec__head">
-      <p class="mono eyebrow rv"><b>05</b> Our story</p>
-      <h2 class="rv">A garage, a mirror, and <em>one very clear night.</em></h2>
+      <p class="mono eyebrow rv"><b>05</b> About StarHunter</p>
+      <h2 class="rv">Two people. <em>No outside funding.</em></h2>
     </div>
     <div class="story">
       <div class="story__text rv">
-        <p class="first">In the winter of 2022, Maren Okafor — an optical engineer who'd spent a decade on satellite cameras — took her niece to a public star party outside Flagstaff. The girl looked through a cheap department-store telescope, saw a smeared, wobbling Saturn, and said politely that it looked better on the internet.</p>
-        <p>Maren went home and started grinding a mirror in her garage. Six months later she'd convinced Theo Lindqvist, a mechanical designer from a drone startup, and Wei-Lin Hsu, who'd built the star-chart engine for a planetarium software company, that the world needed a different kind of telescope company: small, obsessive, and openly measured.</p>
-        <p>StarHunter is now twenty-three people in a converted railway workshop on Route 66. We still test every optic by hand. We still answer support email ourselves. And on clear nights, the parking lot fills with our own telescopes.</p>
+        <p class="first">StarHunter is an independent, two-person project focused on exploring more approachable telescope designs.</p>
+        <p>We have not raised outside investment. We are a small team developing ideas rather than a large company with a finished product line.</p>
+        <p>Our goal is simpler setup, understandable specifications and equipment that makes more nights under the stars possible. The telescope models on this page are concepts, not confirmed releases.</p>
       </div>
       <ol class="timeline rv d1">
-        <li><span class="mono">Jan 2023</span><h4>The first mirror</h4><p>An 8″ mirror figured by hand in a garage. Took 41 hours.</p></li>
-        <li><span class="mono">Sep 2023</span><h4>Incorporated · $3.2M seed</h4><p>Led by dark-sky advocates and two former observatory directors.</p></li>
-        <li><span class="mono">Jun 2024</span><h4>Batch 01 ships</h4><p>180 Lumen 72s. Sold out in 36 hours on a single newsletter.</p></li>
-        <li><span class="mono">Mar 2025</span><h4>Meridian 130 launches</h4><p>Our plate-solving mount, built and calibrated in-house.</p></li>
-        <li><span class="mono">Oct 2026</span><h4>Batch 08 open</h4><p>Vela 200 moves from limited run to full production. 4,200+ scopes under clear skies.</p></li>
+        <li><span class="mono">Team</span><h4>Two people</h4><p>Our entire team currently consists of two people.</p></li>
+        <li><span class="mono">Funding</span><h4>No outside investment</h4><p>StarHunter has not raised funding.</p></li>
+        <li><span class="mono">Work</span><h4>Early design exploration</h4><p>Three concepts illustrate possible telescope directions.</p></li>
+        <li><span class="mono">Principles</span><h4>Useful and transparent</h4><p>We want to be clear about capabilities, costs and trade-offs.</p></li>
+        <li><span class="mono">Next</span><h4>Validate before making claims</h4><p>Any performance or availability commitments must follow real testing.</p></li>
       </ol>
     </div>
-
     <div class="team">
-      <div class="person rv"><div class="avatar" data-seed="1"></div><h4>Maren Okafor</h4><p>Co-founder · CEO &amp; Optics</p></div>
-      <div class="person rv d1"><div class="avatar" data-seed="2"></div><h4>Theo Lindqvist</h4><p>Co-founder · Mechanical</p></div>
-      <div class="person rv d2"><div class="avatar" data-seed="3"></div><h4>Wei-Lin Hsu</h4><p>Co-founder · Software</p></div>
-      <div class="person rv d3"><div class="avatar" data-seed="4"></div><h4>Rosa Alcántara</h4><p>Head of Optical Testing</p></div>
+      <div class="person rv"><div class="avatar" data-seed="1"></div><h4>Team member 01</h4><p>StarHunter · Core team</p></div>
+      <div class="person rv d1"><div class="avatar" data-seed="2"></div><h4>Team member 02</h4><p>StarHunter · Core team</p></div>
     </div>
   </div>
 </section>
-
 <!-- ================= QUOTES ================= -->
 <section class="sec">
   <div class="wrap">
     <div class="sec__head">
-      <p class="mono eyebrow rv"><b>06</b> From the field</p>
-      <h2 class="rv">Written by people <em>who stayed up.</em></h2>
+      <p class="mono eyebrow rv"><b>06</b> Design principles</p>
+      <h2 class="rv">What matters <em>to us.</em></h2>
     </div>
     <div class="quotes">
       <figure class="quote rv" style="margin:0">
-        <blockquote>My kids now argue about whose turn it is at the eyepiece. That never happened with the last telescope.</blockquote>
-        <footer><div><strong>Daniela R.</strong>Meridian 130 · Lisbon</div><span class="stars">★★★★★</span></footer>
+        <blockquote>Make setup straightforward, so an observing night starts with the sky instead of a manual.</blockquote>
+        <footer><div><strong>Simple setup</strong>A design priority</div></footer>
       </figure>
       <figure class="quote rv d1" style="margin:0">
-        <blockquote>I split Epsilon Lyrae on the first night, in poor seeing, with a 72mm. The interferogram in the box wasn't marketing.</blockquote>
-        <footer><div><strong>Kenji O.</strong>Lumen 72 · Nagano</div><span class="stars">★★★★★</span></footer>
+        <blockquote>Show the limits as clearly as the strengths. Specifications should be understandable and verifiable.</blockquote>
+        <footer><div><strong>Honest information</strong>A design priority</div></footer>
       </figure>
       <figure class="quote rv d2" style="margin:0">
-        <blockquote>Fits in the back of a hatchback, sets up in the dark by feel. The spiral arms of M51 were simply there.</blockquote>
-        <footer><div><strong>Hannah W.</strong>Vela 200 · Big Bend, TX</div><span class="stars">★★★★★</span></footer>
+        <blockquote>Favor durable, serviceable equipment over features that won't matter after the first night.</blockquote>
+        <footer><div><strong>Long-term thinking</strong>A design priority</div></footer>
       </figure>
     </div>
   </div>
 </section>
-
 <!-- ================= JOURNAL ================= -->
 <section class="sec" id="journal" style="padding-top:0">
   <div class="wrap">
     <div class="sec__head">
       <p class="mono eyebrow rv"><b>07</b> Journal</p>
-      <h2 class="rv">Notes from <em>the workshop.</em></h2>
-      <p class="lede rv d1">Observing guides, engineering deep-dives, and the occasional confession about a prototype that didn't work.</p>
+      <h2 class="rv">Ideas for <em>the observing field.</em></h2>
+      <p class="lede rv d1">Topics we are exploring. These are article ideas, not a published company archive.</p>
     </div>
     <div class="journal">
       <a class="post rv" href="#journal">
@@ -816,7 +811,7 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
             <g fill="#f1ebdf" opacity=".7"><circle cx="40" cy="40" r="1"/><circle cx="350" cy="60" r="1.2"/><circle cx="90" cy="250" r=".8"/><circle cx="320" cy="240" r="1"/><circle cx="270" cy="30" r=".7"/><circle cx="60" cy="160" r=".7"/></g>
           </svg>
         </div>
-        <div class="meta mono"><span>Observing guide</span><span>Oct 2, 2026</span></div>
+        <div class="meta mono"><span>Planned guide</span><span>Idea</span></div>
         <h3>Finding Andromeda from a city balcony</h3>
         <p>Yes, it's possible. A star-hop from Mirach, the right eyepiece, and what to realistically expect under Bortle 7.</p>
       </a>
@@ -831,9 +826,9 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
             <circle cx="200" cy="150" r="120" fill="none" stroke="rgba(241,235,223,.3)"/>
           </svg>
         </div>
-        <div class="meta mono"><span>Engineering</span><span>Sep 18, 2026</span></div>
-        <h3>Why we stopped trusting Strehl alone</h3>
-        <p>Rosa on zonal errors, turned-down edges, and the single number that hides them. With interferograms from 312 mirrors.</p>
+        <div class="meta mono"><span>Planned explainer</span><span>Idea</span></div>
+        <h3>What Strehl ratios do—and don't—tell you</h3>
+        <p>A proposed guide to optical testing, wavefront errors and interpreting a single headline number.</p>
       </a>
       <a class="post rv d2" href="#journal">
         <div class="post__img" aria-hidden="true">
@@ -849,9 +844,9 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
             <g fill="#f1ebdf" opacity=".6"><circle cx="50" cy="60" r="1"/><circle cx="210" cy="90" r=".8"/><circle cx="360" cy="40" r="1"/><circle cx="90" cy="150" r=".7"/></g>
           </svg>
         </div>
-        <div class="meta mono"><span>Field notes</span><span>Aug 30, 2026</span></div>
-        <h3>Perseids at 3,000 metres: a team trip</h3>
-        <p>Nineteen staff, eleven telescopes and one very cold night on the San Francisco Peaks. 214 meteors logged.</p>
+        <div class="meta mono"><span>Planned observing guide</span><span>Idea</span></div>
+        <h3>Planning a night under the Perseids</h3>
+        <p>A checklist for finding dark skies and observing the annual meteor shower.</p>
       </a>
     </div>
   </div>
@@ -861,13 +856,13 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
 <section class="sec reserve" id="reserve">
   <div class="wrap reserve__in">
     <div>
-      <p class="mono eyebrow rv"><b>08</b> Reserve</p>
-      <h2 class="rv" style="margin-top:24px">Your first<br><em>clear night</em><br>is closer than you think.</h2>
+      <p class="mono eyebrow rv"><b>08</b> Project updates</p>
+      <h2 class="rv" style="margin-top:24px">Small team.<br><em>Big skies.</em><br>Still exploring.</h2>
     </div>
     <div class="batch rv d1">
-      <div class="batch__row mono"><span>Batch 08 · Ships Dec 2026</span><span style="color:var(--gold)" id="batchPct">0%</span></div>
-      <div class="batch__bar"><i id="batchBar"></i></div>
-      <div class="batch__row mono"><span id="batchLeft">— units reserved</span><span>closes Nov 14</span></div>
+      <div class="batch__row mono"><span>Early-stage project · Two people</span><span style="color:var(--gold)">Not accepting orders</span></div>
+      <p class="fine" style="margin-top:18px">The form below is an interface preview only. It does not send or store your email.</p>
+      
       <form class="form" id="reserveForm" novalidate>
         <label for="model" style="position:absolute;left:-9999px">Telescope</label>
         <select id="model" name="model">
@@ -877,10 +872,10 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
         </select>
         <label for="email" style="position:absolute;left:-9999px">Email</label>
         <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
-        <button class="btn btn--solid" type="submit">Hold my place — $100 refundable <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M8 2l5 5-5 5"/></svg></button>
+        <button class="btn btn--solid" type="submit">Preview interest form <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M8 2l5 5-5 5"/></svg></button>
       </form>
       <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
-      <p class="fine">Fully refundable until your telescope ships. We'll email you before anything is charged.</p>
+      <p class="fine">No payment or reservation is made. This static site has no submission backend.</p>
     </div>
   </div>
 </section>
@@ -892,18 +887,18 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
     <div class="foot">
       <div class="foot__brand">
         <a href="#top" class="logo"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="19" fill="none" stroke="#e9c27d" stroke-width="2.5"/><path d="M32 6v9M32 49v9M6 32h9M49 32h9" stroke="#e9c27d" stroke-width="2.5" stroke-linecap="round"/><path d="M32 22l2.6 7.4L42 32l-7.4 2.6L32 42l-2.6-7.4L22 32l7.4-2.6z" fill="#f1ebdf"/></svg>StarHunter</a>
-        <p>Telescopes designed, tested and assembled in Flagstaff, Arizona — the world's first International Dark Sky City.</p>
+        <p>An independent, two-person team exploring telescope design. No outside funding raised.</p>
       </div>
       <div><h5>Telescopes</h5><ul><li><a href="#telescopes">Lumen 72</a></li><li><a href="#telescopes">Meridian 130</a></li><li><a href="#telescopes">Vela 200</a></li><li><a href="#craft">Field app</a></li></ul></div>
       <div><h5>Learn</h5><ul><li><a href="#lab">Aperture Lab</a></li><li><a href="#tonight">Tonight's sky</a></li><li><a href="#journal">Journal</a></li><li><a href="#journal">First-light guide</a></li></ul></div>
-      <div><h5>Company</h5><ul><li><a href="#story">Our story</a></li><li><a href="#story">Careers · 3 open</a></li><li><a href="#story">Dark-sky pledge</a></li><li><a href="#story">Press kit</a></li></ul></div>
-      <div><h5>Support</h5><ul><li><a href="#reserve">Shipping &amp; returns</a></li><li><a href="#reserve">Warranty</a></li><li><a href="#reserve">Collimation help</a></li><li><a href="#reserve">Contact</a></li></ul></div>
+      <div><h5>Team</h5><ul><li><a href="#story">About us</a></li><li><a href="#story">Two-person team</a></li><li><a href="#story">No outside funding</a></li></ul></div>
+      <div><h5>Explore</h5><ul><li><a href="#lab">Aperture Lab</a></li><li><a href="#craft">Design approach</a></li><li><a href="#reserve">Form preview</a></li></ul></div>
     </div>
     <div class="wordmark" aria-hidden="true">StarHunter</div>
     <div class="foot__base mono">
-      <span>© <span id="year">2026</span> StarHunter Optics, Inc.</span>
-      <span>1% of revenue to dark-sky preservation</span>
-      <span>A design concept · StarHunter is a fictional company</span>
+      <span>© <span id="year">2026</span> StarHunter</span>
+      <span>Independent · No outside funding</span>
+      <span>Telescope concepts shown are preliminary; no orders are being taken.</span>
     </div>
   </div>
 </footer>
@@ -1026,7 +1021,7 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
         if (!e.isIntersecting) return;
         e.target.classList.add("in");
         $$("[data-count]", e.target).forEach(countUp);
-        if (e.target.id === "reserveBatch") fillBatch();
+        
         io.unobserve(e.target);
       });
     }, {rootMargin:"0px 0px -8% 0px", threshold:0.08});
@@ -1175,15 +1170,7 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
     el.innerHTML = s;
   });
 
-  /* ---------- reserve ---------- */
-  var batch = $(".batch"); batch.id = "reserveBatch";
-  if (!("IntersectionObserver" in window)) fillBatch();
-  function fillBatch(){
-    var reserved = 412, total = 500, p = reserved / total;
-    $("#batchBar").style.width = (p * 100) + "%";
-    $("#batchPct").textContent = Math.round(p * 100) + "% reserved";
-    $("#batchLeft").textContent = reserved + " of " + total + " units";
-  }
+  /* ---------- form preview; no inventory claims or backend ---------- */
   $$("[data-model]").forEach(function(a){
     a.addEventListener("click", function(){ $("#model").value = a.getAttribute("data-model"); });
   });
@@ -1193,7 +1180,7 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value.trim())){
       msg.textContent = "Please enter a valid email address."; em.focus(); return;
     }
-    msg.textContent = "Thanks! This is a concept site, so no reservation was made and nothing was sent — but your taste in " + $("#model").value + "s is excellent.";
+    msg.textContent = "This is an interface preview: nothing was submitted or stored. Your selected concept is " + $("#model").value + ".";
     em.value = "";
   });
 
