@@ -264,7 +264,7 @@ input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;bac
 .team{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:660px;gap:16px;margin-top:clamp(64px,8vw,112px)}
 .person{border-top:1px solid var(--line-2);padding-top:18px}
 .avatar{width:100%;aspect-ratio:4/5;border-radius:14px;background:var(--bg-2);border:1px solid var(--line);margin-bottom:18px;overflow:hidden;position:relative}
-.avatar svg{width:100%;height:100%}
+.avatar--initials{display:grid;place-items:center;background:radial-gradient(ellipse at 50% 45%,rgba(233,194,125,.12),transparent 65%),var(--bg-2);color:var(--gold);font-family:var(--serif);font-size:clamp(52px,6vw,76px);font-weight:400;letter-spacing:.05em}
 .person h4{margin:0;font-family:var(--serif);font-weight:400;font-size:26px}
 .person p{color:var(--ink-3);font-size:14px}
 
@@ -763,8 +763,8 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
       </ol>
     </div>
     <div class="team">
-      <div class="person rv"><div class="avatar" data-seed="1"></div><h4>Team member 01</h4><p>StarHunter · Core team</p></div>
-      <div class="person rv d1"><div class="avatar" data-seed="2"></div><h4>Team member 02</h4><p>StarHunter · Core team</p></div>
+      <div class="person rv"><div class="avatar avatar--initials" aria-label="Shelly Wang initials">SW</div><h4>Shelly Wang</h4><p>Co-founder · CEO</p></div>
+      <div class="person rv d1"><div class="avatar avatar--initials" aria-label="Steve Luo initials">SL</div><h4>Steve Luo</h4><p>Co-founder</p></div>
     </div>
   </div>
 </section>
@@ -1154,21 +1154,6 @@ footer.site{border-top:1px solid var(--line);padding:72px 0 32px}
     return '<div class="target"><div class="target__icon">' + icons[t[0]] + '</div><div><h4>' + t[1] + '</h4><p>' + t[2] + '</p></div>' +
       '<div class="target__mag"><strong>' + t[3] + '</strong><span class="mono">mag · ' + t[4] + '</span></div></div>';
   }).join("");
-
-  /* ---------- team avatars: generated constellation portraits ---------- */
-  $$(".avatar").forEach(function(el){
-    var R = rng(+el.getAttribute("data-seed") * 97), pts = [], s = "";
-    for (var i = 0; i < 7; i++) pts.push([30 + R()*140, 40 + R()*170]);
-    pts.sort(function(a,b){ return a[0]-b[0]; });
-    var hue = ["233,194,125","143,166,214","241,235,223","216,150,120"][(+el.getAttribute("data-seed")-1)%4];
-    s += '<svg viewBox="0 0 200 250" preserveAspectRatio="xMidYMid slice"><defs><radialGradient id="ag'+el.getAttribute("data-seed")+'" cx="50%" cy="30%" r="80%"><stop offset="0" stop-color="rgba('+hue+',.16)"/><stop offset="1" stop-color="rgba(8,9,13,0)"/></radialGradient></defs>';
-    s += '<rect width="200" height="250" fill="url(#ag'+el.getAttribute("data-seed")+')"/>';
-    for (var j = 0; j < 60; j++) s += '<circle cx="'+(R()*200).toFixed(1)+'" cy="'+(R()*250).toFixed(1)+'" r="'+(R()*0.9+0.2).toFixed(2)+'" fill="rgba(241,235,223,'+(R()*0.4+0.1).toFixed(2)+')"/>';
-    s += '<path d="M'+pts.map(function(p){return p[0].toFixed(1)+" "+p[1].toFixed(1);}).join(" L")+'" fill="none" stroke="rgba('+hue+',.55)" stroke-width=".8"/>';
-    pts.forEach(function(p,i){ s += '<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="'+(i%3===0?2.6:1.7)+'" fill="rgb('+hue+')"/>'; });
-    s += '</svg>';
-    el.innerHTML = s;
-  });
 
   /* ---------- form preview; no inventory claims or backend ---------- */
   $$("[data-model]").forEach(function(a){
